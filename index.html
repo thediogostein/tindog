@@ -3,9 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="js/main.js" defer></script>
     <title>Tindog</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="images/icon-profile.png" alt="profile" />
+        <img src="images/logo.png" alt="logo" />
+        <img src="images/icon-chat.png" alt="chat" />
+      </header>
+      <main>
+        <div class="photo">
+          <h2 class="name">Teddy, 30</h2>
+          <p class="quote">How you doin?</p>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-dislike">
+            <img src="images/icon-cross.png" alt="cross" />
+          </button>
+          <button class="btn btn-like">
+            <img src="images/icon-heart.png" alt="heart" />
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
