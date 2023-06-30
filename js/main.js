@@ -43,7 +43,7 @@ function swipe(hasBeenLiked) {
   const dog = getNewDog();
 
   displayBadge(
-    hasBeenLiked ? 'images/badge-like.png' : 'images/badge-nope.png'
+    hasBeenLiked ? './images/badge-like.png' : './images/badge-nope.png'
   );
 
   if (!dog) {
