@@ -31,6 +31,7 @@ body {
     rgba(255, 255, 255, 1),
     rgba(247, 248, 252, 1)
   );
+  min-height: 100vh;
 }
 
 /* || Utils */
@@ -56,7 +57,7 @@ header img:nth-child(2) {
   height: 40px;
 }
 
-/* || MAIN */
+/* || Main */
 .photo {
   background-image: url('/images/dog-teddy.jpg');
   background-size: cover;
@@ -66,6 +67,19 @@ header img:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+}
+
+.badge {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 48px;
+  transform: rotate(-30deg);
+}
+
+.badge.show {
+  display: block;
 }
 
 .name {
@@ -77,6 +91,7 @@ header img:nth-child(2) {
   opacity: 0.8;
 }
 
+/* || Buttons */
 .buttons {
   padding: 1rem 0;
   display: flex;
@@ -107,4 +122,17 @@ header img:nth-child(2) {
 .btn-dislike:focus {
   background-color: rgba(237, 217, 223, 1);
   box-shadow: 0 10px 20px rgba(237, 217, 223, 1);
+}
+
+/* || No more dogs message */
+.photo.end-message {
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* || Disabled btns */
+button:disabled {
+  pointer-events: none;
 }
